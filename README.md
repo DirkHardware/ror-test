@@ -34,6 +34,6 @@ You need to start by rails db:create to make the database.
 
 Making a basic model looks like $rails g model person name:string age:integer alive:boolean
 
-If you need to create a referential table, you need to set one or more of the belongs_to variables by using [table_you_want_reference]:references. Whatever table you set to reference will be the Foreign Key. This means if the id from that table which the model you've created belongs to is deleted, so too will that model be deleted
+If you need to create a referential table, you need to set one or more of the belongs_to variables by using [table_you_want_reference]:references. Whatever table you set to reference will be the Foreign Key. 
 
 When you migrate, this will add a belongs_to in the model
