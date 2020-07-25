@@ -34,6 +34,17 @@ You need to start by rails db:create to make the database.
 
 Making a basic model looks like $rails g model person name:string age:integer alive:boolean
 
-If you need to create a referential table, you need to set one or more of the belongs_to variables by using [table_you_want_reference]:references. Whatever table you set to reference will be the Foreign Key. 
+If you need to create a referential table, you need to set one or more of the belongs_to variables by using [table_you_want_reference]:references. 
 
 When you migrate, this will add a belongs_to in the model
+
+If you destroy the object that possesses the foreign
+key, rails will flip out. Make sure destroy the belonger fist. 
+
+To access your DB's native CLI type ruby db
+
+To learn more about the PostgreSQL CLI 
+go to here: https://launchschool.com/books/sql_first_edition/read/select_data#selectingall
+
+Go here to relearn your relationships:
+https://www.coursera.org/lecture/rails-with-active-record/one-to-one-association-dXhpv
